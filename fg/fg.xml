@@ -1,0 +1,22 @@
+<ActorFrame><children>
+
+    <Layer
+        Type="Quad"
+        InitCommand="%melody(function(self)
+            if self:getaux()==1 then return end self:aux(1)
+        
+
+        end)"
+
+        OnCommand="diffusealpha,0;queuecommand,Setup" SetupCommand="%melody.setup"
+    />
+    
+    <Layer Type="Quad" InitCommand="%melody.actor_block" OnCommand="diffuse,0,0,0,1"/>
+
+    <Layer Type="ActorFrame" OnCommand="%melody(function(self) fg=self; end)"><children>
+
+        <!-- Foreground actors here -->
+
+    </children></Layer>
+
+</children></ActorFrame>
