@@ -20,7 +20,7 @@
 #BGCHANGES:;
 
 //The majority of simfile scripts and visual effects are stored here.
-#FGCHANGES:0.000=fg=1.000=0=0=1=====,
+#FGCHANGES:0.000=template/fg=1.000=0=0=1=====,
 ;
 
 #KEYSOUNDS:;
