@@ -1,4 +1,9 @@
 <ActorFrame InitCommand="sleep,9E9"><children>
+	<!-- non-Simply-Love fallback -->
+	<Layer Type="Quad" Condition="not GlobalClock" InitCommand="%function(self)
+		melody_GlobalClock = self; self:effectperiod(1000000)
+	end"/>
+
 	<Layer File="../init.xml"/>
 	<Layer Type="ActorFrame" Condition=" not melody_error"><children>
 		<Layer Type="Quad" OnCommand="diffusealpha,0;queuecommand,Setup" SetupCommand="%melody.setup" />
